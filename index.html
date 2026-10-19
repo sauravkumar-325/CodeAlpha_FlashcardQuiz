@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Flashcard Quiz</h1>
+    <p>Learn something new every day!</p>
+  </header>
+
+  <main class="container">
+    <section class="study-section">
+      <div class="progress">
+        <span id="cardCount">Card 1 of 3</span>
+        <span>Study Mode</span>
+      </div>
+
+      <div class="flashcard">
+        <span class="card-label" id="cardLabel">QUESTION</span>
+        <h2 id="cardText">What is HTML?</h2>
+        <p id="cardHint">Think about your answer...</p>
+        <button id="showAnswer" class="primary-btn">
+          Show Answer
+        </button>
+      </div>
+
+      <div class="navigation">
+        <button id="prevBtn" class="secondary-btn">← Previous</button>
+        <button id="nextBtn" class="secondary-btn">Next →</button>
+      </div>
+
+      <div class="card-actions">
+        <button id="editBtn" class="edit-btn">Edit Card</button>
+        <button id="deleteBtn" class="delete-btn">Delete Card</button>
+      </div>
+    </section>
+
+    <section class="add-section">
+      <h2>Add a Flashcard</h2>
+      <form id="cardForm">
+        <label for="question">Question</label>
+        <textarea id="question" placeholder="Enter your question"
+          required></textarea>
+
+        <label for="answer">Answer</label>
+        <textarea id="answer" placeholder="Enter the answer"
+          required></textarea>
+
+        <button type="submit" class="primary-btn">
+          + Add Flashcard
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer>Made with HTML, CSS & JavaScript</footer>
+  <script src="app.js"></script>
+</body>
+</html>
